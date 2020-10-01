@@ -86,5 +86,6 @@ $('.slider-area').slick({
 });
 
 lightbox.option({
-    positionFromTop: 20,
+    positionFromTop: 10,
+    fitImagesInViewport: true,
 })
