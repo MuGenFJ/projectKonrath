@@ -755,6 +755,7 @@ ul.filter-menu li span:hover {
     text-transform: uppercase;
     font-size: .7rem;
     font-weight: 800;
+    outline: none;
 }
 .big-banner .brochure-btn:hover{
     border: 1px solid;
@@ -821,6 +822,7 @@ ul.filter-menu li span:hover {
     cursor: pointer;
     text-transform: uppercase;
     font-size: .5rem;
+    outline: none;
 }
 .redirect .contact-btn:hover{
     background: transparent;
@@ -895,6 +897,7 @@ ul.filter-menu li span:hover {
 .redirection-btn{
     text-align: center;
     margin-top: 10px;
+    outline: none;
 }
 
 .redirection-btn img{
