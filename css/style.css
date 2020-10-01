@@ -34,7 +34,6 @@ a{
 }
 
 .header-container{
-    /* background: url(../img/Logo\ CK\ _anim.gif) center center no-repeat; */
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -67,12 +66,16 @@ a{
       align-items: center;
       height: 100%;
       width: 100%;
+        transition: all 2s ease-in-out !important;
+        opacity: 0;
+
     }
 
     .swiper-slide img{
         height: 100%;
         width: 100%;
         object-fit: cover;
+
     }
 
     .swiper-button-next{
@@ -566,37 +569,6 @@ section{
     }
 }
 
-.banner h1{
-    position: absolute;
-    text-transform: uppercase;
-    font-family: eurostyle-normal;
-    font-size: 6rem;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-shadow: 2px 2px rgb(34, 33, 110);
-}
-@media (max-width: 1080px){
-    .banner h1{
-        font-size: 5rem;
-    }
-}
-@media (max-width: 850px){
-    .banner h1{
-        font-size: 4rem;
-    }
-}
-@media (max-width: 650px){
-    .banner h1{
-        font-size: 3.5rem;
-    }
-}
-@media (max-width: 510px){
-    .banner h1{
-        font-size: 3rem;
-    }
-}
-
 .banner img{
     width: 100%;
     height: 100%;
@@ -630,9 +602,16 @@ section{
 }
 
 /*filter project section*/
+.grid-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .filter-wrapper {
     padding: 0 15px 50px 15px;
     width: 60%;
+    height: 100%;
     margin: 0 auto;
 }
 @media(max-width:380px){
@@ -751,12 +730,34 @@ ul.filter-menu li span:hover {
 .big-banner{
     width: 100%;
     height: 350px;
+    position: relative;
 }
 
 .big-banner img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+}
+
+.big-banner .brochure-btn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(34, 33, 110);
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 800;
+}
+.big-banner .brochure-btn:hover{
+    border: 1px solid;
 }
 
 .information-container{
@@ -797,6 +798,33 @@ ul.filter-menu li span:hover {
     font-size: .8rem;
     color: gray;
     line-height: 20px;
+}
+
+.redirect{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.redirect h3{
+   text-transform: uppercase;
+   color: rgb(34, 33, 110);
+   margin-bottom: 10px;
+   font-size: 1.2rem;
+}
+
+.redirect .contact-btn{
+    background: rgb(34, 33, 110);
+    padding: 10px;
+    color: white;
+    border: 1px solid  rgb(34, 33, 110);;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .5rem;
+}
+.redirect .contact-btn:hover{
+    background: transparent;
+    color:  rgb(34, 33, 110);
 }
 
 /*CarouselSlider*/
@@ -1080,10 +1108,7 @@ ul.filter-menu li span:hover {
       outline: none;
       cursor: pointer;
       }
-   .geoportal .itinerary-btn:hover{
-    color: rgb(34, 33, 110);
-    background: rgba(34, 33, 110, 0.295);
-  }
+  
 
   @media (max-width: 500px) {
     .geoportal .itinerary-btn{
@@ -1098,25 +1123,3 @@ ul.filter-menu li span:hover {
       transition: all ease-in-out .6s;
   }
 
-  .geoportal-img:hover{
-    transform: scale(1.3);
-    transition: all ease-in-out .6s;
-  }
-
- 
-
-  /* .location-box .maps-link{
-      width: 100%;
-  }
-
-  .logo-location{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
-
-  .logo-location img{
-      width: 71px;
-      height: 82px;
-  } */
