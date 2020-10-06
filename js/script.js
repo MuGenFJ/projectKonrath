@@ -21,25 +21,21 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 // Filter Grid //
+// Filter Grid //
 $(document).ready(function () {
 
-    var $grid = $('.grid-container').isotope({
-        itemSelector: '.grid-item'
+    $('.grid-container').isotope({
+        itemSelector: '.grid-item',
     });
 
     // filter items on button click
-    $('ul.filter-menu').on('click', 'li', function () {
+    $('.filter-menu').on('click', 'li', function () {
         var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-        return false;
+        $('.grid-container').isotope({ filter: filterValue });
+        $('.filter-menu li').removeClass('active');
+        $(this).addClass('active');
     });
-
-    $("ul.filter-menu li").click(function () {
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-    });
-
-});
+})
 
 // CAROUSEL-SLIDER //
 $('.slider-area').slick({
