@@ -492,6 +492,11 @@ a{
     opacity: 1;
 }
 
+.img-box:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+
 .footer-container{
     display: flex;
     height: 100%;
@@ -757,12 +762,11 @@ ul.filter-menu li span:hover {
     padding: 10px 20px;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 800;
+    font-size: .8rem;
     outline: none;
 }
 .big-banner .brochure-btn:hover{
-    background: transparent;
+    background: #fff;
     color: rgb(34, 33, 110);
 }
 
@@ -801,7 +805,7 @@ ul.filter-menu li span:hover {
 }
 
 .information-container p{
-    font-size: .9rem;
+    font-size: 1rem;
     color: gray;
     line-height: 20px;
 }
@@ -816,7 +820,7 @@ ul.filter-menu li span:hover {
    text-transform: uppercase;
    color: rgb(34, 33, 110);
    margin-bottom: 10px;
-   font-size: 1.2rem;
+   font-size: 1.6rem;
 }
 
 .redirect .contact-btn{
@@ -826,7 +830,7 @@ ul.filter-menu li span:hover {
     border: 1px solid  rgb(34, 33, 110);;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: .8rem;
     outline: none;
 }
 .redirect .contact-btn:hover{
